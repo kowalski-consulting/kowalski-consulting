@@ -1,0 +1,33 @@
+* Workflow
+** Prerequisites
+   - Install node using brew
+     : $ brew install node
+   - Install npm 
+     : $ curl http://npmjs.org/install.sh | sh
+   - Install coffeescript
+     : $ npm install -g coffee-script
+** Development
+*** Set up dependencies
+    : $ bundle install
+*** Cleanup all generated js and css
+    : $ bundle exec rake cleanup
+*** Run rake server - it will compile your assets on the fly
+    : $ bundle exec rackup config.ru
+*** Go to localhost:9292 and see your site
+
+** Deployment
+*** Compile all assets - this will produce all css and js files
+    : $ bundle exec rake
+
+
+* Tasks
+
+** TODO Add links to the technology sites
+
+** TODO Add links to LinkedIn profiles and maybe Twitter accounts
+
+** TODO Add SmartCampus screenshots
+
+** TODO Make the Project background $baseColor
+
+
