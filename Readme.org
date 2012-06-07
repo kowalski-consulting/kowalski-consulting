@@ -7,29 +7,15 @@
    - Install coffeescript
      : $ npm install -g coffee-script
 ** Development
-*** Set up dependencies
-    : $ bundle install
-*** Cleanup all generated js and css
-    : $ bundle exec rake cleanup
-*** Run rake server - it will compile your assets on the fly
-    : $ bundle exec rackup config.ru
+   Install dependencies
+   : $ bundle install
+   Clone your repo e.x.
+   : git clone git@github.com:kowalski-consulting/kowalski-consulting.git app
+   Run a development server, it will cleanup all generated assets and
+   when you press ctrl-c compile it again
+   : $ bundle exec rake
 *** Go to localhost:9292 and see your site
 
 ** Deployment
-*** Compile all assets - this will produce all css and js files
-    : $ bundle exec rake
-
-
-* Tasks
-
-** TODO Add links to the technology sites
-
-** TODO Add links to LinkedIn profiles and maybe Twitter accounts
-
-** DONE Add SmartCampus screenshots
-   CLOSED: [2012-06-07 Thu 13:54]
-
-** DONE Make the Project background $baseColor
-   CLOSED: [2012-06-07 Thu 13:54]
-
+   Just stop the server and when your assets are ready push them to github.
 

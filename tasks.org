@@ -1,0 +1,12 @@
+* Tasks
+
+** TODO Add links to the technology sites
+
+** TODO Add links to LinkedIn profiles and maybe Twitter accounts
+
+** DONE Add SmartCampus screenshots
+   CLOSED: [2012-06-07 Thu 13:54]
+
+** DONE Make the Project background $baseColor
+   CLOSED: [2012-06-07 Thu 13:54]
+
