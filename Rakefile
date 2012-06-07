@@ -32,3 +32,15 @@ task :cleanup do
     sh "rm #{file.ext('css')}" if File.exist? file.ext('css')
   end
 end
+
+desc "run server"
+task :server do
+  puts "Cleaning generated assets!"
+  Rake::Task["cleanup"].invoke
+  puts "DONE!\n"
+  puts "\nRunning development server: to stop press CTRL-C!"
+  sh "rackup config.ru"
+  puts "\nGenerating assets!"
+  Rake::Task["compile"].invoke
+  puts "DONE!\n"
+end
