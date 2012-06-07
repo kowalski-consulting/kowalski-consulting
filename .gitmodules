@@ -1,3 +1,0 @@
-[submodule "app"]
-	path = app
-	url = git@github.com:kowalski-consulting/kowalski-consulting.github.com.git
