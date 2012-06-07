@@ -1,4 +1,4 @@
-task :default => [:compile]
+task :default => [:server]
 
 coffee_path = File.dirname(__FILE__) + "/app/assets/javascripts"
 scss_path = File.dirname(__FILE__) + "/app/assets/stylesheets"
