@@ -14,7 +14,7 @@
    Run a development server, it will cleanup all generated assets and
    when you press ctrl-c compile it again
    : $ bundle exec rake
-*** Go to localhost:9292 and see your site
+   Go to localhost:9292 and see your site
 
 ** Deployment
    Just stop the server and when your assets are ready push them to github.
