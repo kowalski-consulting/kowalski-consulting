@@ -2,20 +2,32 @@
 ** Prerequisites
    - Install node using brew
      : $ brew install node
+
    - Install npm 
      : $ curl http://npmjs.org/install.sh | sh
+
    - Install coffeescript
      : $ npm install -g coffee-script
+
 ** Development
-   Install dependencies
-   : $ bundle install
-   Clone your repo e.g.
-   : git clone git@github.com:kowalski-consulting/kowalski-consulting.github.com.git app
-   Run a development server, it will cleanup all generated assets and
-   when you press ctrl-c compile it again
-   : $ bundle exec rake
-   Go to localhost:9292 and see your site
+   - Clone development kit:
+      : $ git clone https://github.com/kowalski-consulting/kowalski-consulting.git && rm -rf kowalski-consulting/.git
+
+   - Cd into it and install dependencies
+      : $ cd kowalski-consulting
+      : $ bundle install
+
+   - Clone your repo e.g.
+      : $ git clone git@github.com:kowalski-consulting/kowalski-consulting.github.com.git app
+
+   - Run a development server, it will cleanup all generated assets
+      and when you press ctrl-c compile them again
+      : $ bundle exec rake
+
+   - Go to localhost:9292 and see your site
 
 ** Deployment
-   Just stop the server and when your assets are ready push them to github.
+   Remember to stop the server before you commit changes to master
+   branch and push. Your assets must be generated and they are
+   generated when you press ctrl-c.
 
